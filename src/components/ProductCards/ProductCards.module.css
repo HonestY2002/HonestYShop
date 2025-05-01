@@ -1,0 +1,60 @@
+.cards {
+  border: 1px solid black;
+  background-color: #2625248a;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  aspect-ratio: 1 / 1;
+}
+
+.cards:hover {
+  transform: scale(1.2);
+  background-color: #262524;
+}
+
+.images {
+  width: 165px;
+  height: 165px;
+  padding: 10px;
+  box-sizing: border-box;
+  object-fit: cover;
+  margin: auto;
+}
+
+.prices {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.names {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 10px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.cards:hover .names {
+  opacity: 1;
+}
+
+.quantity {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}

@@ -1,0 +1,44 @@
+#root {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: url(/src/image/e7b0e7825afe45c2a76aad7ea5e6a9cc.jpg);
+  background-position: 50% 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: overlay;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.product-catalog {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  width: 100%;
+}
