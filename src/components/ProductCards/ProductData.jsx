@@ -6,6 +6,7 @@ export const product = [
     description: "This is a sample product description.",
     quantity: "1",
     image: "src/image/rifle.ak.png",
+    category: "gun",
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ export const product = [
     price: 29.99,
     description: "This is a sample product description.",
     image: "src/image/rifle.bolt.png",
+    category: "comps",
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ export const product = [
     name: "Sample Product",
     price: 29.99,
     description: "This is a sample product description.",
+    catecories: "gun",
     image: "",
   },
   {
@@ -40,6 +43,7 @@ export const product = [
     name: "Sample Product",
     price: 29.99,
     description: "This is a sample product description.",
+    catecories: "comps",
     image: "",
   },
   {
