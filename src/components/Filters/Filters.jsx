@@ -6,19 +6,19 @@ function Filters({ onFilterChange }) {
       <button className={classes.filters} onClick={() => onFilterChange("all")}>
         Все
       </button>
-      <button className={classes.filters} onClick={() => onFilterChange("gun")}>
+      <button className={classes.filters} onClick={() => onFilterChange("resurce")}>
         Ресурсы
       </button>
       <button
         className={classes.filters}
-        onClick={() => onFilterChange("comps")}
+        onClick={() => onFilterChange("build")}
       >
         Строение
       </button>
-      <button className={classes.filters} onClick={() => onFilterChange("all")}>
+      <button className={classes.filters} onClick={() => onFilterChange("tools")}>
         Инструменты
       </button>
-      <button className={classes.filters} onClick={() => onFilterChange("gun")}>
+      <button className={classes.filters} onClick={() => onFilterChange("armor")}>
         Одежда
       </button>
       <button
@@ -27,15 +27,15 @@ function Filters({ onFilterChange }) {
       >
         Компоненты
       </button>
-      <button className={classes.filters} onClick={() => onFilterChange("all")}>
+      <button className={classes.filters} onClick={() => onFilterChange("gun")}>
         Оружие
       </button>
-      <button className={classes.filters} onClick={() => onFilterChange("gun")}>
+      <button className={classes.filters} onClick={() => onFilterChange("ammo")}>
         Боеприпасы
       </button>
       <button
         className={classes.filters}
-        onClick={() => onFilterChange("comps")}
+        onClick={() => onFilterChange("other")}
       >
         Прочее
       </button>
