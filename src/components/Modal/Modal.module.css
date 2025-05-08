@@ -1,0 +1,39 @@
+.overlay {
+  position: fixed;
+  inset: 0px;
+  z-index: 1000;
+  display: flex;
+  font-size: var(--fs-base);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.modal {
+  background-color: #fff;
+  color: black;
+  width: 70%;
+  max-width: 480px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+}
+
+.img {
+  width: 430px;
+  height: 430px;
+}
+
+.name {
+  align-items: start;
+  justify-content: start;
+  display: grid;
+  margin-left: 10px;
+}

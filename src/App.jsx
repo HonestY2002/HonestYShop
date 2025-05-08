@@ -7,6 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [filter, setFilter] = useState("all"); // Состояние для фильтра
+  const [open, setOpen] = useState(false);
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter); // Обновляем фильтр
