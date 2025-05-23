@@ -1,48 +1,21 @@
-import classes from "./Navigate.module.css";
-
-function Navigate() {
+function Navigate({ active, onChange }) {
   return (
     <div>
-      <nav className={classes.menu}>
-        <a href="#!" className={classes.navbar}>
-          Honesty rust
-        </a>
-        <button className={classes.button}>
-          <span></span>
-        </button>
-        <ul className={classes.menu}>
-          <li className={classes.navbar}>
-            <a href="#!">
-              <span>Новости</span>
-            </a>
-          </li>
-          <li className={classes.navbar}>
-            <a href="#!">
-              <span>Товары</span>
-            </a>
-          </li>
-          <li className={classes.navbar}>
-            <a href="#!">
-              <span>Серверы</span>
-            </a>
-          </li>
-          <li className={classes.navbar}>
-            <a href="#!">
-              <span>Банлист</span>
-            </a>
-          </li>
-          <li className={classes.navbar}>
-            <a href="#!">
-              <span>Контакты</span>
-            </a>
-          </li>
-          <li className={classes.navbar}>
-            <a href="#!">
-              <span>Вход через Steam</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <button isActive={active === "main"} onClick={() => onChange("main")}>
+        Магазин
+      </button>
+      <button
+        isActive={active === "statistics"}
+        onClick={() => onChange("statistics")}
+      >
+        Статистика
+      </button>
+      <button isActive={active === "rules"} onClick={() => onChange("rules")}>
+        Правила
+      </button>
+      <button isActive={active === "bans"} onClick={() => onChange("bans")}>
+        Баны
+      </button>
     </div>
   );
 }
