@@ -4,31 +4,43 @@ import Navigate from "./components/Navigate/Navigate";
 import Catalog from "./components/Catalog/Catalog";
 import LogoSection from "./components/LogoSection/LogoSection";
 import Rules from "./components/Rules/Rules";
+import Bans from "./components/Bans/Bans";
+import Statistics from "./components/Statistics/Statistics";
 
 function App() {
   const [activeTab, setActiveTab] = useState("main");
 
   return (
     <>
-      <main>
-        <LogoSection />
-        {activeTab === "main" && (
-          <Catalog
-            active={activeTab}
-            onChange={(current) => setActiveTab(current)}
-          />
-        )}
-        <Navigate
+      <LogoSection />
+      {activeTab === "main" && (
+        <Catalog
           active={activeTab}
           onChange={(current) => setActiveTab(current)}
         />
-        {activeTab === "rules" && (
-          <Rules
-            active={activeTab}
-            onChange={(current) => setActiveTab(current)}
-          />
-        )}
-      </main>
+      )}
+      <Navigate
+        active={activeTab}
+        onChange={(current) => setActiveTab(current)}
+      />
+      {activeTab === "rules" && (
+        <Rules
+          active={activeTab}
+          onChange={(current) => setActiveTab(current)}
+        />
+      )}
+      {activeTab === "statistics" && (
+        <Statistics
+          active={activeTab}
+          onChange={(current) => setActiveTab(current)}
+        />
+      )}
+      {activeTab === "bans" && (
+        <Bans
+          active={activeTab}
+          onChange={(current) => setActiveTab(current)}
+        />
+      )}
     </>
   );
 }

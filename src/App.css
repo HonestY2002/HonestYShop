@@ -26,13 +26,10 @@ li {
 }
 
 a {
-  all: unset; 
+  all: unset;
   cursor: pointer;
 }
 
-div {
-  display: block;
-}
 .product-catalog {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
