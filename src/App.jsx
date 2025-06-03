@@ -19,10 +19,6 @@ function App() {
           onChange={(current) => setActiveTab(current)}
         />
       )}
-      <Navigate
-        active={activeTab}
-        onChange={(current) => setActiveTab(current)}
-      />
       {activeTab === "rules" && (
         <Rules
           active={activeTab}
@@ -41,6 +37,10 @@ function App() {
           onChange={(current) => setActiveTab(current)}
         />
       )}
+      <Navigate
+        active={activeTab}
+        onChange={(current) => setActiveTab(current)}
+      />
     </>
   );
 }
