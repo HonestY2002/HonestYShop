@@ -1,6 +1,6 @@
 export const dataStats = [
   {
-    user: 'Ghost',
+    user: "Ghost",
     kd: 2.14,
     kills: 8605,
     deaths: 4018,
@@ -11,10 +11,10 @@ export const dataStats = [
     reanimations: 32,
     shotsFired: 227061,
     hits: 91524,
-    accuracy: '40.31%'
+    accuracy: "40.31%",
   },
   {
-    user: 'Брайн гриффер',
+    user: "Брайн гриффер",
     kd: 1.43,
     kills: 7634,
     deaths: 5339,
@@ -25,6 +25,6 @@ export const dataStats = [
     reanimations: 65,
     shotsFired: 213541,
     hits: 67903,
-    accuracy: '31.8%'
+    accuracy: "31.8%",
   },
 ];

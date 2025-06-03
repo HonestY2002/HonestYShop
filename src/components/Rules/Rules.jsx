@@ -1,21 +1,14 @@
-function Rules() {
-  return (
-    <div>
-      <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-      </ul>
-    </div>
-  );
-}
-
-export default Rules;
+export const rules = [
+  {
+    title: "1. Общие положения",
+    content: [
+      "Все игроки, играющие на серверах проекта RUST ROOM ...",
+      // остальные пункты
+    ],
+  },
+  {
+    title: "2. Правила игрового чата",
+    content: ["Правила для чата и т.д."],
+  },
+  // добавьте остальные разделы
+];

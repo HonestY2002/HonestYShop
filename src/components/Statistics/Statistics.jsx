@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UserStatsTable from "../UserStatsTable/UserStatsTable";
+import UserStatistics from "../UserStatsTable/UserStatistics";
 
 function Statistics() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,7 +22,7 @@ function Statistics() {
           />
         </div>
         <div>
-          <UserStatsTable />
+          <UserStatistics />
         </div>
       </div>
     </div>

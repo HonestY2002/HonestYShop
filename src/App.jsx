@@ -3,7 +3,7 @@ import "./App.css";
 import Navigate from "./components/Navigate/Navigate";
 import Catalog from "./components/Catalog/Catalog";
 import LogoSection from "./components/LogoSection/LogoSection";
-import Rules from "./components/Rules/Rules";
+import RulesList from "./components/Rules/RulesList";
 import Bans from "./components/Bans/Bans";
 import Statistics from "./components/Statistics/Statistics";
 
@@ -20,7 +20,7 @@ function App() {
         />
       )}
       {activeTab === "rules" && (
-        <Rules
+        <RulesList
           active={activeTab}
           onChange={(current) => setActiveTab(current)}
         />
